@@ -1,10 +1,12 @@
 #include <raspicam/src/raspicam.h>
+#include <ctime>
+#include <iostream>
+#include <fstream>
 
 using namespace std;
 
-class caminterface {
-    raspicam::RaspiCam cam;
-    caminterface() {
-        
-    }
+class CamInterface {
+    raspicam::RaspiCam *cam;
+    CamInterface();
+
 };
