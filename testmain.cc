@@ -1,3 +1,5 @@
+#pragma once
+
 #include "caminterface.h"
 #include "osinterface.h"
 
