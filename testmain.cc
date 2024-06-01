@@ -19,8 +19,8 @@ uint32_t extract(CryptoPP::SecByteBlock sbb, size_t ind) {
 
 int main() {
     CryptoPP::Keccak_512 k;
-    CamInterface cam();
-    OSInterface osi();
+    CamInterface cam{};
+    OSInterface osi{};
     CryptoPP::SecByteBlock out(8192);
     for(int i = 0; i < 10000; i++) {
         cam.getEntropy(k);
