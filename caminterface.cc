@@ -17,7 +17,7 @@ CamInterface::CamInterface() {
     cam.setAWB(raspicam::RASPICAM_AWB_OFF);
 }
 
-void CamInterface::get(CryptoPP::Keccak_512 &hash) {
+void CamInterface::getEntropy(CryptoPP::Keccak_512 &hash) {
     size_t sz = cam.getImageTypeSize (raspicam::RASPICAM_FORMAT_RGB);
     for(int i = 0; i < GET_ITERATIONS; i++) {
         cam.grab();

@@ -23,8 +23,8 @@ int main() {
     OSInterface osi();
     CryptoPP::SecByteBlock out(8192);
     for(int i = 0; i < 10000; i++) {
-        cam.get(k);
-        osi.get(k);
+        cam.getEntropy(k);
+        osi.getEntropy(k);
         k.TruncatedFinal(out, 8192);
         for(int j = 0; j < 8192; j += 4) {
             cout<<extract(out, j)<<endl;
