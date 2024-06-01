@@ -1,9 +1,9 @@
-#include <raspicam/src/raspicam.h>
+#include "raspicam/src/raspicam.h"
 #include <ctime>
 #include <iostream>
 #include <fstream>
 #include <memory>
-#include <cryptopp/keccak.h>
+#include "cryptopp/keccak.h"
 #include <functional>
 #include <unistd.h> //raspbian is linux
 #include "seedinterface.h"
